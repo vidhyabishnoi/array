@@ -1,5 +1,5 @@
 #include<stdio.h>
-char a[3][3]={' ',' ',' ',' ',' ',' ',' ',' ',' '}; 
+char a[3][3]={' ',' ',' ',' ',' ',' ',' ',' ',' '};
 char player1='x',player2='0';
 void display();
 int result();
@@ -18,7 +18,7 @@ get_userinput1();
 printf("--------a=%d\n",a);
   if(a>4)
    {
-//code for debuging  
+//code for debuging
   c=result();
   printf("--------c=%d\n",c);
      if('x'==c)
@@ -37,7 +37,7 @@ printf("--------a=%d\n",a);
       break;
      }
   }
- 
+
  get_userinput1();
  a=a+1;
 }
@@ -87,14 +87,14 @@ int result()
  {
   if(a[i][0]=='x'&&a[i][1]=='x'&&a[i][2]=='x')
   return ('x');
-  else if(a[i][0]=='0'&&a[i][1]=='0'&&a[i][2]=='0') 
+  else if(a[i][0]=='0'&&a[i][1]=='0'&&a[i][2]=='0')
   return ('0');
  }
  for(j=0;j<=2;j++)
  {
   if(a[0][j]=='x'&&a[1][j]=='x'&&a[2][j]=='x')
   return ('x');
-  else if(a[0][j]=='0'&&a[1][j]=='0'&&a[2][j]=='0') 
+  else if(a[0][j]=='0'&&a[1][j]=='0'&&a[2][j]=='0')
   return ('0');
  }
  if(a[0][0]=='x'&&a[1][1]=='x'&&a[2][2]=='x')
@@ -105,9 +105,14 @@ int result()
   return ('x');
  else if((a[0][2]=='0'&&a[1][1]=='0'&&a[2][0]=='0'))
   return ('0');
-else 
+else
 return 1;
 }
+void delete()
+{
+	int g;
+}
+
 
 
 
